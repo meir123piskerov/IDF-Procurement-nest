@@ -11,8 +11,4 @@ export class CollectionService {
     @Inject('COLLECTION_REPOSITORY')
     private catsRepository: typeof Collection,
   ) {}
-
-  async findAll(): Promise<Collection[]> {
-    return this.catsRepository.findAll<Collection>();
-  }
 }

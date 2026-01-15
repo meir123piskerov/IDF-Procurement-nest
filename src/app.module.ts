@@ -15,7 +15,7 @@ import { Collection } from './collection/entities/collection.entity';
       port: 3306,
       username: 'root',
       password: '',
-      database: 'meir',
+      database: 'idfdatabase',
       autoLoadModels: true,
       synchronize: true,
       models: [Collection],

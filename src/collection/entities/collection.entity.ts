@@ -3,13 +3,22 @@ import { Table, Column, Model } from 'sequelize-typescript';
 @Table
 export class Collection extends Model {
   @Column
+  primaryKey: true;
+  declare id: string;
+
+  @Column
   name: string;
 
   @Column
-  age: number;
+  type: string;
 
   @Column
-  breed: string;
+  quantity: number;
+
+  @Column
+  pricePerUnit: number;
+  @Column
+  hasImage: boolean;
 }
 
 // import { Table, Column, Model, DataType } from 'sequelize-typescript';
